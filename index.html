@@ -21,23 +21,16 @@
       <img class="brand__logo" src="assets/icons/mercuryfallen_logo.png" alt="MercuryFallen logo" />
       <span class="brand__text">MercuryFallen</span>
     </a>
-
-    <nav class="nav">
-      <a class="nav__link" href="#live">Live</a>
-      <a class="nav__link" href="#links">Links</a>
-      <a class="nav__link" href="#faq">FAQ</a>
-    </nav>
   </header>
 
   <main class="container">
     <section class="hero" id="live">
       <div class="hero__copy">
         <h1 class="title">MercuryFallen</h1>
-        <p class="subtitle">Live stream + the important links. Clean, dark, and a little chaotic.</p>
+        <p class="subtitle">Live stream + links.</p>
 
         <div class="cta">
           <a class="btn btn--primary" href="https://www.twitch.tv/mercuryfallen" target="_blank" rel="noreferrer">Open Twitch</a>
-          <a class="btn btn--ghost" href="#links">Jump to Panels</a>
         </div>
       </div>
 
@@ -64,43 +57,40 @@
       </div>
     </section>
 
-    <!-- Panels (the good part) -->
     <section class="panelsWrap" id="links" aria-label="Panels">
-      <a class="panel" href="#about" aria-label="About">
-        <img src="assets/icons/panel_about.png" alt="About" />
-      </a>
-
-      <a class="panel" href="#faq" aria-label="FAQ">
+    <!-- FAQ -->
+    <div class="panelCard">
+        <div class="panel">
         <img src="assets/icons/panel_faq.png" alt="FAQ" />
-      </a>
+        </div>
+        <div class="panelText">
+        <p>Name: Kelly</p>
+        <p>Pronouns: She/Her (short hair does not mean someone’s a dude!)</p>
+        <p>Favorite Game: The Last of Us</p>
+        <p>Cat’s Name: Pixie</p>
+        </div>
+    </div>
 
-      <a class="panel" href="https://discord.gg/zFThbX8Hy7" target="_blank" rel="noreferrer" aria-label="Discord">
+    <!-- ABOUT -->
+    <div class="panelCard">
+        <div class="panel">
+        <img src="assets/icons/panel_about.png" alt="About" />
+        </div>
+        <div class="panelText">
+        <p>I’m a new streamer who loves spooky chaos—jump scares, horror games, and missing shots in FPS/TPS. I keep things chill, joke around, and try to survive asym horror (barely). Come hang out… just don’t laugh too hard when I scream!</p>
+        </div>
+    </div>
+
+    <!-- DISCORD -->
+    <a class="panelCard panelCard--link" href="https://discord.gg/zFThbX8Hy7" target="_blank" rel="noreferrer" aria-label="Discord">
+        <div class="panel">
         <img src="assets/icons/panel_discord.png" alt="Discord" />
-      </a>
+        </div>
+        <div class="panelText panelText--empty"></div>
+    </a>
     </section>
 
-    <section class="content" id="about">
-      <h2 class="sectionTitle">About</h2>
-      <p class="bodyText">
-        <!-- Paste her real About text here (or I can format it if you paste it). -->
-        Hi, I’m MercuryFallen — welcome to my corner of the internet.
-      </p>
-    </section>
-
-    <section class="content" id="faq">
-      <h2 class="sectionTitle">FAQ</h2>
-
-      <details class="qa">
-        <summary>What do you stream?</summary>
-        <p>Games, community stuff, and whatever chaos the day brings.</p>
-      </details>
-
-      <details class="qa">
-        <summary>Where can I hang out?</summary>
-        <p>Discord is the best place — use the Discord panel above.</p>
-      </details>
-
-      <!-- Socials under FAQ (as requested) -->
+      <!-- Socials under FAQ -->
       <div class="socialRow" aria-label="Social links">
         <a class="socialBtn" href="https://www.instagram.com/mercuryfallenlive" target="_blank" rel="noreferrer" aria-label="Instagram">
           <img src="assets/icons/instagram.svg" alt="" />
@@ -115,8 +105,6 @@
     </section>
 
     <footer class="footer">
-      <span>v0.0.1</span>
-      <span class="dot">•</span>
       <span>mercuryfallen.org</span>
       <span class="dot">•</span>
       <span>© <span id="year"></span></span>
