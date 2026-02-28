@@ -1,25 +1,83 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MercuryFallen</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body{
-      background:#0f0f14;
-      color:#ffffff;
-      font-family:Arial, sans-serif;
-      text-align:center;
-      padding-top:15vh;
-    }
-    h1{
-      font-size:3rem;
-      letter-spacing:2px;
-    }
-  </style>
+  <meta name="description" content="MercuryFallen — links, socials, and info." />
+
+  <link rel="icon" type="image/png" href="./assets/icons/mercuryfallen_logo.png" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
-  <h1>MercuryFallen</h1>
-  <p>Coming Soon</p>
+  <main class="wrap">
+    <header class="hero">
+      <img class="logo" src="./assets/icons/mercuryfallen_logo.png" alt="MercuryFallen logo" />
+      <div class="heroText">
+        <h1>MercuryFallen</h1>
+        <p class="tag">Coming soon ✨</p>
+
+        <div class="quickLinks">
+          <a class="pill" href="https://www.twitch.tv/mercuryfallen" target="_blank" rel="noopener">Twitch</a>
+          <a class="pill" href="https://discord.gg/zFThbX8Hy7" target="_blank" rel="noopener">Discord</a>
+        </div>
+      </div>
+
+      <nav class="socials" aria-label="Social links">
+        <a class="social" href="https://www.instagram.com/mercuryfallenlive" target="_blank" rel="noopener" aria-label="Instagram">
+          <img src="./assets/icons/instagram.svg" alt="" />
+        </a>
+        <a class="social" href="https://www.tiktok.com/@mercuryfallen" target="_blank" rel="noopener" aria-label="TikTok">
+          <img src="./assets/icons/tiktok.svg" alt="" />
+        </a>
+      </nav>
+    </header>
+
+    <section class="panels" aria-label="Main panels">
+      <!-- ABOUT -->
+      <a class="panel" href="#about" aria-label="About">
+        <img src="./assets/icons/panel_about.png" alt="About" />
+      </a>
+
+      <!-- FAQ -->
+      <a class="panel" href="#faq" aria-label="FAQ">
+        <img src="./assets/icons/panel_faq.png" alt="FAQ" />
+      </a>
+
+      <!-- DISCORD -->
+      <a class="panel" href="https://discord.gg/zFThbX8Hy7" target="_blank" rel="noopener" aria-label="Discord">
+        <img src="./assets/icons/panel_discord.png" alt="Discord" />
+      </a>
+    </section>
+
+    <section class="content" id="about">
+      <h2>About</h2>
+      <p>
+        <!-- Paste/shorten her Twitch about-me text here. -->
+        Hi, I’m MercuryFallen — welcome to my little corner of the internet.
+      </p>
+    </section>
+
+    <section class="content" id="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>What do you stream?</summary>
+        <p>Games, community stuff, and whatever chaos the day brings.</p>
+      </details>
+      <details>
+        <summary>Where can I hang out?</summary>
+        <p>Join the Discord: <a href="https://discord.gg/zFThbX8Hy7" target="_blank" rel="noopener">discord.gg/zFThbX8Hy7</a></p>
+      </details>
+    </section>
+
+    <footer class="foot">
+      <span>© <span id="year"></span> MercuryFallen</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
