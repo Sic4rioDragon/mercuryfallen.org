@@ -3,79 +3,127 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="MercuryFallen — stream + links" />
   <title>MercuryFallen</title>
-  <meta name="description" content="MercuryFallen — links, socials, and info." />
 
-  <link rel="icon" type="image/png" href="./assets/icons/mercuryfallen_logo.png" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="assets/icons/mercuryfallen_logo.png" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <main class="wrap">
-    <header class="hero">
-      <img class="logo" src="./assets/icons/mercuryfallen_logo.png" alt="MercuryFallen logo" />
-      <div class="heroText">
-        <h1>MercuryFallen</h1>
-        <p class="tag">Coming soon ✨</p>
+  <div class="bg">
+    <div class="noise" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+  </div>
 
-        <div class="quickLinks">
-          <a class="pill" href="https://www.twitch.tv/mercuryfallen" target="_blank" rel="noopener">Twitch</a>
-          <a class="pill" href="https://discord.gg/zFThbX8Hy7" target="_blank" rel="noopener">Discord</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="MercuryFallen home">
+      <img class="brand__logo" src="assets/icons/mercuryfallen_logo.png" alt="MercuryFallen logo" />
+      <span class="brand__text">MercuryFallen</span>
+    </a>
+
+    <nav class="nav">
+      <a class="nav__link" href="#live">Live</a>
+      <a class="nav__link" href="#links">Links</a>
+      <a class="nav__link" href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="live">
+      <div class="hero__copy">
+        <h1 class="title">MercuryFallen</h1>
+        <p class="subtitle">Live stream + the important links. Clean, dark, and a little chaotic.</p>
+
+        <div class="cta">
+          <a class="btn btn--primary" href="https://www.twitch.tv/mercuryfallen" target="_blank" rel="noreferrer">Open Twitch</a>
+          <a class="btn btn--ghost" href="#links">Jump to Panels</a>
         </div>
       </div>
 
-      <nav class="socials" aria-label="Social links">
-        <a class="social" href="https://www.instagram.com/mercuryfallenlive" target="_blank" rel="noopener" aria-label="Instagram">
-          <img src="./assets/icons/instagram.svg" alt="" />
-        </a>
-        <a class="social" href="https://www.tiktok.com/@mercuryfallen" target="_blank" rel="noopener" aria-label="TikTok">
-          <img src="./assets/icons/tiktok.svg" alt="" />
-        </a>
-      </nav>
-    </header>
+      <div class="hero__card">
+        <div class="card__header">
+          <span class="pill">Live Broadcast</span>
+          <a class="card__link" href="https://www.twitch.tv/mercuryfallen" target="_blank" rel="noreferrer">Watch on Twitch</a>
+        </div>
 
-    <section class="panels" aria-label="Main panels">
-      <!-- ABOUT -->
+        <div class="player">
+          <iframe
+            id="twitchEmbed"
+            title="MercuryFallen Twitch Stream"
+            allowfullscreen
+            scrolling="no"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+          ></iframe>
+        </div>
+
+        <p class="card__note">
+          If the embed doesn’t load: browser privacy settings can block it — “Watch on Twitch” always works.
+        </p>
+      </div>
+    </section>
+
+    <!-- Panels (the good part) -->
+    <section class="panelsWrap" id="links" aria-label="Panels">
       <a class="panel" href="#about" aria-label="About">
-        <img src="./assets/icons/panel_about.png" alt="About" />
+        <img src="assets/icons/panel_about.png" alt="About" />
       </a>
 
-      <!-- FAQ -->
       <a class="panel" href="#faq" aria-label="FAQ">
-        <img src="./assets/icons/panel_faq.png" alt="FAQ" />
+        <img src="assets/icons/panel_faq.png" alt="FAQ" />
       </a>
 
-      <!-- DISCORD -->
-      <a class="panel" href="https://discord.gg/zFThbX8Hy7" target="_blank" rel="noopener" aria-label="Discord">
-        <img src="./assets/icons/panel_discord.png" alt="Discord" />
+      <a class="panel" href="https://discord.gg/zFThbX8Hy7" target="_blank" rel="noreferrer" aria-label="Discord">
+        <img src="assets/icons/panel_discord.png" alt="Discord" />
       </a>
     </section>
 
     <section class="content" id="about">
-      <h2>About</h2>
-      <p>
-        <!-- Paste/shorten her Twitch about-me text here. -->
-        Hi, I’m MercuryFallen — welcome to my little corner of the internet.
+      <h2 class="sectionTitle">About</h2>
+      <p class="bodyText">
+        <!-- Paste her real About text here (or I can format it if you paste it). -->
+        Hi, I’m MercuryFallen — welcome to my corner of the internet.
       </p>
     </section>
 
     <section class="content" id="faq">
-      <h2>FAQ</h2>
-      <details>
+      <h2 class="sectionTitle">FAQ</h2>
+
+      <details class="qa">
         <summary>What do you stream?</summary>
         <p>Games, community stuff, and whatever chaos the day brings.</p>
       </details>
-      <details>
+
+      <details class="qa">
         <summary>Where can I hang out?</summary>
-        <p>Join the Discord: <a href="https://discord.gg/zFThbX8Hy7" target="_blank" rel="noopener">discord.gg/zFThbX8Hy7</a></p>
+        <p>Discord is the best place — use the Discord panel above.</p>
       </details>
+
+      <!-- Socials under FAQ (as requested) -->
+      <div class="socialRow" aria-label="Social links">
+        <a class="socialBtn" href="https://www.instagram.com/mercuryfallenlive" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <img src="assets/icons/instagram.svg" alt="" />
+          <span>Instagram</span>
+        </a>
+
+        <a class="socialBtn" href="https://www.tiktok.com/@mercuryfallen" target="_blank" rel="noreferrer" aria-label="TikTok">
+          <img src="assets/icons/tiktok.svg" alt="" />
+          <span>TikTok</span>
+        </a>
+      </div>
     </section>
 
-    <footer class="foot">
-      <span>© <span id="year"></span> MercuryFallen</span>
+    <footer class="footer">
+      <span>v0.0.1</span>
+      <span class="dot">•</span>
+      <span>mercuryfallen.org</span>
+      <span class="dot">•</span>
+      <span>© <span id="year"></span></span>
     </footer>
   </main>
 
+  <script src="script.js"></script>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
