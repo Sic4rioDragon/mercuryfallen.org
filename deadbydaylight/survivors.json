@@ -6,18 +6,22 @@
       "prestige": 50,
       "main": true,
       "rotation": false,
-
-      "favLoadout": {
-        "perks": [
-          "Bond",
-          "Prove Thyself",
-          "Leader",
-          "Windows of Opportunity"
-        ],
-        "item": "",
-        "addons": [],
-        "offering": ""
-      }
+      "favLoadouts": [
+        {
+          "name": "Ruuuuunnn",
+          "perks": ["Lithe", "Resilience", "Iron Will", "Kindred"],
+          "item": "",
+          "addons": [],
+          "offering": ""
+        },
+        {
+          "name": "Sabo time",
+          "perks": ["Saboteur", "Lithe", "Breakout", "Iron Will"],
+          "item": "Alex’s Toolbox",
+          "addons": [],
+          "offering": "Petrified Oak"
+        }
+      ]
     }
   ]
 }

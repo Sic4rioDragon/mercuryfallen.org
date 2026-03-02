@@ -32,33 +32,46 @@
 
     <section class="dbdGrid" aria-label="DBD Characters">
   <article class="charCard" id="dwightCard" data-full="../assets/images/dino_dwight.png">
-    <div class="prestigeBadge" id="prestigeBadge" aria-label="Prestige">
-  <img class="prestigeFill" id="prestigeFill" alt="" />
-  <img class="prestigeBorder" id="prestigeBorder" alt="" />
-  <div class="prestigeNum" id="prestigeNum"></div>
+    <div class="charImgWrap">
+  <div class="prestigeBadge" id="prestigeBadge" aria-label="Prestige">
+    <img class="prestigeFill" id="prestigeFill" alt="" />
+    <img class="prestigeBorder" id="prestigeBorder" alt="" />
+    <div class="prestigeNum" id="prestigeNum"></div>
   </div>
 
-    <div class="charImgWrap">
-      <img class="charImg" src="../assets/images/dino_dwight.png" alt="Dwight Fairfield (Dino Dwight)" />
-    </div>
+  <img class="charImg" src="../assets/images/dino_dwight.png" alt="Dwight Fairfield (Dino Dwight)" />
+  </div>
 
     <div class="charMeta">
       <div class="charName">Dwight Fairfield</div>
-      <div class="charTag">Survivor</div>
 
-      <div class="loadout" aria-label="Favorite loadout">
-        <a class="slot" id="perk1" target="_blank" rel="noreferrer"><img alt="Perk 1"></a>
-        <a class="slot" id="perk2" target="_blank" rel="noreferrer"><img alt="Perk 2"></a>
-        <a class="slot" id="perk3" target="_blank" rel="noreferrer"><img alt="Perk 3"></a>
-        <a class="slot" id="perk4" target="_blank" rel="noreferrer"><img alt="Perk 4"></a>
+      <div class="loadouts" aria-label="Favorite loadouts">
+  <div class="loadoutBlock">
+    <div class="loadoutTitle">Fav Loadout 1</div>
+    <div class="loadout" id="loadout1">
+      <a class="slot" id="l1perk1" target="_blank" rel="noreferrer"><img alt="Perk 1"></a>
+      <a class="slot" id="l1perk2" target="_blank" rel="noreferrer"><img alt="Perk 2"></a>
+      <a class="slot" id="l1perk3" target="_blank" rel="noreferrer"><img alt="Perk 3"></a>
+      <a class="slot" id="l1perk4" target="_blank" rel="noreferrer"><img alt="Perk 4"></a>
+    </div>
+  </div>
 
-        <div class="slotSep"></div>
+  <div class="loadoutBlock">
+    <div class="loadoutTitle">Fav Loadout 2</div>
+    <div class="loadout" id="loadout2">
+      <a class="slot" id="l2perk1" target="_blank" rel="noreferrer"><img alt="Perk 1"></a>
+      <a class="slot" id="l2perk2" target="_blank" rel="noreferrer"><img alt="Perk 2"></a>
+      <a class="slot" id="l2perk3" target="_blank" rel="noreferrer"><img alt="Perk 3"></a>
+      <a class="slot" id="l2perk4" target="_blank" rel="noreferrer"><img alt="Perk 4"></a>
 
-        <a class="slot" id="item" target="_blank" rel="noreferrer"><img alt="Item"></a>
-        <a class="slot" id="addon1" target="_blank" rel="noreferrer"><img alt="Add-on 1"></a>
-        <a class="slot" id="addon2" target="_blank" rel="noreferrer"><img alt="Add-on 2"></a>
-        <a class="slot" id="offering" target="_blank" rel="noreferrer"><img alt="Offering"></a>
-      </div>
+      <div class="slotSep"></div>
+
+      <!-- these will show as text pills for now -->
+      <span class="pillText" id="l2item"></span>
+      <span class="pillText" id="l2offering"></span>
+    </div>
+  </div>
+</div>
     </div>
   </article>
 </section>

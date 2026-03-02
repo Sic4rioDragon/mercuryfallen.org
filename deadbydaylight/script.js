@@ -2,15 +2,14 @@
   // Pull data + prestige assets from your sic4riodragon.uk DBD
   const REMOTE_BASE = "https://sic4riodragon.uk/deadbydaylight/";
   const SURVIVORS_JSON = "./survivors.json";
-  const portrait = "../assets/images/dino_dwight.png";
-img.src = portrait;
-  // Prestige assets (same folders your sic4rio page uses)
+  
+  // Prestige assets
   const PRESTIGE = {
     crestsDir: REMOTE_BASE + "assets/dbd/Prestige/Crests/",
     bordersDir: REMOTE_BASE + "assets/dbd/Prestige/Crest%20Borders/",
   };
 
-  // Perk icons (same as your sic4rio page)
+  // Perk icons
   const PERK_ICON_BASE =
     "https://raw.githubusercontent.com/snoggles/dbd-perk-emoji/main/images/input/";
 
@@ -48,7 +47,7 @@ img.src = portrait;
     return { fill, border };
   }
 
-  // same “display prestige” rule as your site: mains/rotation show true, others cap at 3 after P3
+  // display prestige
   function displayPrestige(entry) {
     const real = Number(entry?.prestige || 0);
     if (entry?.main === true || entry?.rotation === true) return real;
@@ -157,30 +156,29 @@ img.src = portrait;
       }
 
       // Favorite loadout -> perk icons on the card (if they exist in your JSON)
-      const fav = dwight.favLoadout || {};
-      const perks = Array.isArray(fav.perks) ? fav.perks : [];
+      const favs = Array.isArray(dwight.favLoadouts) ? dwight.favLoadouts : [];
+const l1 = favs[0] || {};
+const l2 = favs[1] || {};
 
-      setPerkSlot("perk1", perks[0] || "");
-      setPerkSlot("perk2", perks[1] || "");
-      setPerkSlot("perk3", perks[2] || "");
-      setPerkSlot("perk4", perks[3] || "");
+const l1perks = Array.isArray(l1.perks) ? l1.perks : [];
+setPerkSlot("l1perk1", l1perks[0] || "");
+setPerkSlot("l1perk2", l1perks[1] || "");
+setPerkSlot("l1perk3", l1perks[2] || "");
+setPerkSlot("l1perk4", l1perks[3] || "");
 
-      // These aren’t icon-defined in your survivors.json right now (it’s mainly perks/addons strings),
-      // so we’ll hide them unless you later add icon filenames:
-      setSlotIcon("item", "");
-      setSlotIcon("addon1", "");
-      setSlotIcon("addon2", "");
-      setSlotIcon("offering", "");
+const l2perks = Array.isArray(l2.perks) ? l2.perks : [];
+setPerkSlot("l2perk1", l2perks[0] || "");
+setPerkSlot("l2perk2", l2perks[1] || "");
+setPerkSlot("l2perk3", l2perks[2] || "");
+setPerkSlot("l2perk4", l2perks[3] || "");
 
-      // Enable separator only if any slots show
-      const any =
-        !document.getElementById("perk1")?.classList.contains("is-empty") ||
-        !document.getElementById("perk2")?.classList.contains("is-empty") ||
-        !document.getElementById("perk3")?.classList.contains("is-empty") ||
-        !document.getElementById("perk4")?.classList.contains("is-empty");
+// Item + offering as text pills for now
+const itemEl = document.getElementById("l2item");
+if (itemEl) itemEl.textContent = l2.item ? `Item: ${l2.item}` : "";
 
-      const loadout = document.querySelector(".loadout");
-      if (loadout) loadout.classList.toggle("has-any", !!any);
+const offEl = document.getElementById("l2offering");
+if (offEl) offEl.textContent = l2.offering ? `Offering: ${l2.offering}` : "";
+      
     })
     .catch((err) => console.error("Failed to load survivors.json", err));
 })();
