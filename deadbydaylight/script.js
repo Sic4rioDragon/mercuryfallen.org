@@ -1,7 +1,7 @@
 (() => {
   // Pull data + prestige assets from your sic4riodragon.uk DBD
   const REMOTE_BASE = "https://sic4riodragon.uk/deadbydaylight/";
-  const SURVIVORS_JSON = REMOTE_BASE + "survivors.json";
+  const SURVIVORS_JSON = "./survivors.json";
 
   // Prestige assets (same folders your sic4rio page uses)
   const PRESTIGE = {

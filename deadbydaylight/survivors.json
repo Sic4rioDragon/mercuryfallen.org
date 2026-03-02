@@ -1,0 +1,23 @@
+{
+  "survivors": [
+    {
+      "id": "dwightfairfield",
+      "name": "Dwight Fairfield",
+      "prestige": 50,
+      "main": true,
+      "rotation": false,
+
+      "favLoadout": {
+        "perks": [
+          "Bond",
+          "Prove Thyself",
+          "Leader",
+          "Windows of Opportunity"
+        ],
+        "item": "",
+        "addons": [],
+        "offering": ""
+      }
+    }
+  ]
+}
