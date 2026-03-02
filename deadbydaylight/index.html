@@ -31,17 +31,41 @@
     </section>
 
     <section class="dbdGrid" aria-label="DBD Characters">
-      <article class="charCard" aria-label="Dwight Fairfield">
-        <div class="charImgWrap">
-          <img class="charImg" src="../assets/images/dino_dwight.png" alt="Dwight (Dino Dwight)" />
-        </div>
+  <article class="charCard" id="dwightCard" data-full="../assets/images/dino_dwight.png">
+    <img class="prestigeCrest" id="prestigeCrest" alt="Prestige crest" />
 
-        <div class="charMeta">
-          <div class="charName">Dwight Fairfield</div>
-          <div class="charTag">Survivor</div>
-        </div>
-      </article>
-    </section>
+    <div class="charImgWrap">
+      <img class="charImg" src="../assets/images/dino_dwight.png" alt="Dwight Fairfield (Dino Dwight)" />
+    </div>
+
+    <div class="charMeta">
+      <div class="charName">Dwight Fairfield</div>
+      <div class="charTag">Survivor</div>
+
+      <div class="loadout" aria-label="Favorite loadout">
+        <a class="slot" id="perk1" target="_blank" rel="noreferrer"><img alt="Perk 1"></a>
+        <a class="slot" id="perk2" target="_blank" rel="noreferrer"><img alt="Perk 2"></a>
+        <a class="slot" id="perk3" target="_blank" rel="noreferrer"><img alt="Perk 3"></a>
+        <a class="slot" id="perk4" target="_blank" rel="noreferrer"><img alt="Perk 4"></a>
+
+        <div class="slotSep"></div>
+
+        <a class="slot" id="item" target="_blank" rel="noreferrer"><img alt="Item"></a>
+        <a class="slot" id="addon1" target="_blank" rel="noreferrer"><img alt="Add-on 1"></a>
+        <a class="slot" id="addon2" target="_blank" rel="noreferrer"><img alt="Add-on 2"></a>
+        <a class="slot" id="offering" target="_blank" rel="noreferrer"><img alt="Offering"></a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- Click-to-view modal -->
+<div class="modal" id="imgModal" aria-hidden="true">
+  <button class="modal__backdrop" id="modalClose" aria-label="Close"></button>
+  <div class="modal__panel" role="dialog" aria-modal="true">
+    <img id="modalImg" alt="Preview" />
+  </div>
+</div>
 
     <footer class="footer">
       <span>mercuryfallen.org</span>
@@ -49,5 +73,6 @@
       <span><a href="/" class="footerLink">home</a></span>
     </footer>
   </main>
+  <script src="./script.js"></script>
 </body>
 </html>
