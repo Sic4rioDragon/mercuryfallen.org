@@ -95,6 +95,60 @@
   font-weight: 750;
   letter-spacing: .2px;
 }
+/* loadout name next to title */
+.loadoutName{
+  margin-left: 8px;
+  color: rgba(255,255,255,.60);
+  font-weight: 650;
+  font-size: 12px;
+}
+.loadoutName:empty{ display:none; }
+
+/* perk tooltip */
+.slot{
+  position: relative; /* needed for tooltip */
+}
+
+.slot[data-tip]:hover::after{
+  content: attr(data-tip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+  white-space: nowrap;
+
+  padding: 7px 9px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(10,10,14,.92);
+  color: rgba(255,255,255,.92);
+  font-size: 12px;
+  font-weight: 650;
+  letter-spacing: .2px;
+  box-shadow: 0 16px 44px rgba(0,0,0,.55);
+  z-index: 50;
+}
+
+.slot[data-tip]:hover::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 2px);
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: rgba(10,10,14,.92);
+  border-left: 1px solid rgba(255,255,255,.14);
+  border-top: 1px solid rgba(255,255,255,.14);
+  transform: translateX(-50%) rotate(45deg);
+  z-index: 49;
+}
+
+/* don't show tooltip on empty slots */
+.slot.is-empty:hover::after,
+.slot.is-empty:hover::before{
+  display:none;
+}
 
 .pillText{
   display:inline-flex;

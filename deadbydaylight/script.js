@@ -80,6 +80,8 @@
       a.classList.add("is-empty");
       if (img) img.removeAttribute("src");
       a.removeAttribute("href");
+      a.removeAttribute("data-tip");
+      a.removeAttribute("aria-label");
       return;
     }
     a.classList.remove("is-empty");
@@ -95,6 +97,8 @@
 
     const name = String(perkName || "").trim();
     if (!name) return setSlotIcon(id, "");
+    a.setAttribute("data-tip", name);
+    a.setAttribute("aria-label", name);
 
     const files = perkNameToFilename(name);
     const first = PERK_ICON_BASE + files[0];
@@ -159,7 +163,11 @@
       const favs = Array.isArray(dwight.favLoadouts) ? dwight.favLoadouts : [];
 const l1 = favs[0] || {};
 const l2 = favs[1] || {};
+const l1name = document.getElementById("l1name");
+if (l1name) l1name.textContent = l1.name ? `(${l1.name})` : "";
 
+const l2name = document.getElementById("l2name");
+if (l2name) l2name.textContent = l2.name ? `(${l2.name})` : "";
 const l1perks = Array.isArray(l1.perks) ? l1.perks : [];
 setPerkSlot("l1perk1", l1perks[0] || "");
 setPerkSlot("l1perk2", l1perks[1] || "");
