@@ -32,7 +32,7 @@
   box-shadow: 0 16px 50px rgba(0,0,0,.25);
   transition: transform .14s ease, border-color .14s ease, filter .14s ease;
   position: relative;
-  cursor: pointer;
+  cursor: default;
 }
 .prestigeCrest{
   position: absolute;
@@ -106,51 +106,17 @@
   height: 1px;
 }
 
-/* modal */
-.modal{
-  position: fixed;
-  inset: 0;
-  display:none;
-  z-index: 99;
-}
-.modal[aria-hidden="false"]{ display:block; }
-
-.modal__backdrop{
-  position:absolute;
-  inset:0;
-  background: rgba(0,0,0,.70);
-  border:0;
-  padding:0;
-}
-
-.modal__panel{
-  position: relative;
-  margin: 6vh auto 0;
-  width: min(900px, 92vw);
-  border-radius: 18px;
-  border: 1px solid rgba(255,255,255,.12);
-  background: rgba(10,10,14,.85);
-  box-shadow: 0 20px 80px rgba(0,0,0,.7);
-  overflow:hidden;
-}
-
-.modal__panel img{
-  width: 100%;
-  height: auto;
-  display:block;
-}
 @media (max-width: 980px){
   .charImgWrap{ height: 55vh; }
 }
 /* ===== Prestige badge (same idea as sic4rio page, but simplified) ===== */
 .prestigeBadge{
   position:absolute;
-  top: 14px;
+  bottom: 14px;
   left: 14px;
   width: 68px;
   height: 68px;
   z-index: 5;
-  filter: drop-shadow(0 10px 22px rgba(0,0,0,.55));
   pointer-events: none;
 }
 

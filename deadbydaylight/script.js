@@ -2,7 +2,8 @@
   // Pull data + prestige assets from your sic4riodragon.uk DBD
   const REMOTE_BASE = "https://sic4riodragon.uk/deadbydaylight/";
   const SURVIVORS_JSON = "./survivors.json";
-
+  const portrait = "../assets/images/dino_dwight.png";
+img.src = portrait;
   // Prestige assets (same folders your sic4rio page uses)
   const PRESTIGE = {
     crestsDir: REMOTE_BASE + "assets/dbd/Prestige/Crests/",
@@ -118,30 +119,6 @@
     a.href = first;
     a.addEventListener("click", (e) => e.stopPropagation());
   }
-
-  // ------------------ Modal (your existing Mercury modal) ------------------
-  const card = document.getElementById("dwightCard");
-  const modal = document.getElementById("imgModal");
-  const modalImg = document.getElementById("modalImg");
-  const close = document.getElementById("modalClose");
-
-  function openModal(src) {
-    if (!modal || !modalImg) return;
-    modalImg.src = src;
-    modal.setAttribute("aria-hidden", "false");
-  }
-
-  function closeModal() {
-    if (!modal) return;
-    modal.setAttribute("aria-hidden", "true");
-    if (modalImg) modalImg.src = "";
-  }
-
-  if (card) card.addEventListener("click", () => openModal(card.dataset.full));
-  if (close) close.addEventListener("click", closeModal);
-  window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeModal();
-  });
 
   // ------------------ Load Dwight from sic4rio survivors.json ------------------
   fetch(cacheBust(SURVIVORS_JSON, Date.now()))
