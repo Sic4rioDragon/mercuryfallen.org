@@ -2,7 +2,9 @@
 body{
   min-height: 100vh;
 }
-
+.dbdActions{
+  margin-top: 12px;
+}
 .container{
   min-height: calc(100vh - 70px);
   display: flex;
