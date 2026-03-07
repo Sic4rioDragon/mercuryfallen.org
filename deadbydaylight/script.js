@@ -215,21 +215,7 @@ function applyLoadouts(prefix, entry) {
 
       // Favorite loadout -> perk icons on the card (if they exist in your JSON)
       const favs = Array.isArray(dwight.favLoadouts) ? dwight.favLoadouts : [];
-    fetch(cacheBust(KILLERS_JSON, Date.now()))
-  .then((r) => r.json())
-  .then((data) => {
-    const list = data?.killers || [];
-    const wraith = list.find((k) => k.id === "thewraith");
-    if (!wraith) {
-      console.warn("Wraith not found in killers.json");
-      return;
-    }
-
-    applyPrestige("wraith", wraith);
-    applyLoadouts("w", wraith);
-  })
-  .catch((err) => console.error("Failed to load killers.json", err));
-   
+      
 const l1 = favs[0] || {};
 const l2 = favs[1] || {};
 const l1name = document.getElementById("l1name");
@@ -259,3 +245,18 @@ if (offEl) offEl.textContent = l2.offering ? `Offering: ${l2.offering}` : "";
     })
     .catch((err) => console.error("Failed to load survivors.json", err));
 })();
+fetch(cacheBust(KILLERS_JSON, Date.now()))
+  .then((r) => r.json())
+  .then((data) => {
+    const list = data?.killers || [];
+    const wraith = list.find((k) => k.id === "thewraith");
+    if (!wraith) {
+      console.warn("Wraith not found in killers.json");
+      return;
+    }
+
+    applyPrestige("wraith", wraith);
+    applyLoadouts("w", wraith);
+  })
+  .catch((err) => console.error("Failed to load killers.json", err));
+  
