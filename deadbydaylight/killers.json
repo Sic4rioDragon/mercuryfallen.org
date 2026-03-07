@@ -1,0 +1,21 @@
+{
+  "killers": [
+    {
+      "id": "thewraith",
+      "name": "The Wraith",
+      "prestige": 3,
+      "main": true,
+      "rotation": false,
+      "favLoadouts": [
+        {
+          "name": "",
+          "perks": [],
+          "item": "",
+          "addons": [],
+          "offering": ""
+        }
+      ],
+      "portraitOverride": "../assets/images/wraith.png"
+    }
+  ]
+}
