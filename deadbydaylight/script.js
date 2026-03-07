@@ -260,7 +260,6 @@ if (offEl) offEl.textContent = l2.offering ? `Offering: ${l2.offering}` : "";
       
     })
     .catch((err) => console.error("Failed to load survivors.json", err));
-})();
 fetch(cacheBust(KILLERS_JSON, Date.now()))
   .then((r) => r.json())
   .then((data) => {
@@ -275,3 +274,4 @@ fetch(cacheBust(KILLERS_JSON, Date.now()))
     applyLoadouts("w", wraith);
   })
   .catch((err) => console.error("Failed to load killers.json", err));
+  })();
