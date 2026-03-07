@@ -1,0 +1,95 @@
+{
+  "updated": "2026-03-06",
+  "challenges": [
+    {
+      "id": "random-perks",
+      "name": "Random perks",
+      "enabled": true,
+      "notes": "Use NightLight or let chat pick."
+    },
+    {
+      "id": "no-perks",
+      "name": "No perks",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "two-perks-only",
+      "name": "Escape with only 2 perks",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "no-exhaustion",
+      "name": "No exhaustion perks",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "dwight-only",
+      "name": "Use only Dwight perks",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "solo-gens",
+      "name": "Do 2 gens solo and escape",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "three-unhooks",
+      "name": "Get 3 unhooks in one match",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "no-self-heal",
+      "name": "No healing yourself",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "blind-or-stun",
+      "name": "Blind or stun the killer once",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "sabo-play",
+      "name": "Get a sabo play",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "hatch-escape",
+      "name": "Escape through hatch",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "meme-build",
+      "name": "Meme build (viewer picks theme)",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "lockerless",
+      "name": "No lockers all match",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "totem-run",
+      "name": "Cleanse 5 totems before escaping",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "toolbox-only",
+      "name": "Bring a toolbox and it must be used",
+      "enabled": true,
+      "notes": ""
+    }
+  ]
+}

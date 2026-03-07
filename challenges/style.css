@@ -1,0 +1,114 @@
+.pageWrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 16px 40px;
+}
+
+.topHeader{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:18px;
+}
+
+.backBtn{
+  text-decoration:none;
+  padding:10px 14px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.9);
+}
+
+.titleWrap{ flex:1; }
+.pageTitle{ margin:0; font-size:32px; }
+.pageSub{ margin:6px 0 0; opacity:.75; }
+
+.challengeSection{
+  margin-bottom: 16px;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.challengeHeader{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.challengeTitle{
+  margin: 0;
+  font-size: 18px;
+}
+
+.challengeList{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px;
+}
+
+.challengeItem{
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.28);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.challengeItem.disabled{
+  opacity: .45;
+  filter: grayscale(.2);
+}
+
+.challengeItem .name{
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.challengeItem .meta{
+  font-size: 12px;
+  opacity: .75;
+  line-height: 1.35;
+}
+
+.challengeLinks{
+  display:flex;
+  gap:10px;
+  justify-content:flex-end;
+  flex-wrap:wrap;
+}
+
+.challengeLinks .pillBtn{
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  text-decoration: none;
+  color: rgba(255,255,255,0.92);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.challengeLinks .pillBtn:hover{
+  background: rgba(255,255,255,0.10);
+}
+
+.challengesFooter{
+  margin-top: 28px;
+}
+
+@media (max-width: 760px){
+  .topHeader{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .challengeHeader{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
