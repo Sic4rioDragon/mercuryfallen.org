@@ -429,3 +429,22 @@ a:focus-visible, button:focus-visible{
 @media (max-width: 980px){
   .panelsWrap{ grid-template-columns: 1fr; }
 }
+.topbarChallengeBtn{
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 980px){
+  .topbar{
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .topbarChallengeBtn{
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    white-space: normal;
+    text-align: center;
+  }
+}
