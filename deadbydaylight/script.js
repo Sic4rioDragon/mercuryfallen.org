@@ -2,6 +2,7 @@
   // Pull data + prestige assets from your sic4riodragon.uk DBD
   const REMOTE_BASE = "https://sic4riodragon.uk/deadbydaylight/";
   const SURVIVORS_JSON = "./survivors.json";
+  const KILLERS_JSON = "./killers.json";
   
   // Prestige assets
   const PRESTIGE = {
@@ -17,7 +18,60 @@
     const sep = url.includes("?") ? "&" : "?";
     return `${url}${sep}v=${encodeURIComponent(version || Date.now())}`;
   }
+  function applyPrestige(prefix, entry) {
+  const p = displayPrestige(entry);
+  const assets = prestigeAssets(p);
 
+  const fillEl = document.getElementById(prefix + "PrestigeFill");
+  const borderEl = document.getElementById(prefix + "PrestigeBorder");
+  const numEl = document.getElementById(prefix + "PrestigeNum");
+  const badge = document.getElementById(prefix + "PrestigeBadge");
+
+  if (assets && p > 0) {
+    if (fillEl) fillEl.src = assets.fill;
+    if (borderEl) {
+      if (assets.border) {
+        borderEl.style.display = "block";
+        borderEl.src = assets.border;
+      } else {
+        borderEl.style.display = "none";
+      }
+    }
+    if (numEl) numEl.textContent = String(p);
+  } else if (badge) {
+    badge.style.display = "none";
+  }
+}
+
+function applyLoadouts(prefix, entry) {
+  const favs = Array.isArray(entry.favLoadouts) ? entry.favLoadouts : [];
+  const l1 = favs[0] || {};
+  const l2 = favs[1] || {};
+
+  const n1 = document.getElementById(prefix + "1name");
+  if (n1) n1.textContent = l1.name ? `(${l1.name})` : "";
+
+  const n2 = document.getElementById(prefix + "2name");
+  if (n2) n2.textContent = l2.name ? `(${l2.name})` : "";
+
+  const l1perks = Array.isArray(l1.perks) ? l1.perks : [];
+  setPerkSlot(prefix + "1perk1", l1perks[0] || "");
+  setPerkSlot(prefix + "1perk2", l1perks[1] || "");
+  setPerkSlot(prefix + "1perk3", l1perks[2] || "");
+  setPerkSlot(prefix + "1perk4", l1perks[3] || "");
+
+  const l2perks = Array.isArray(l2.perks) ? l2.perks : [];
+  setPerkSlot(prefix + "2perk1", l2perks[0] || "");
+  setPerkSlot(prefix + "2perk2", l2perks[1] || "");
+  setPerkSlot(prefix + "2perk3", l2perks[2] || "");
+  setPerkSlot(prefix + "2perk4", l2perks[3] || "");
+
+  const itemEl = document.getElementById(prefix + "2item");
+  if (itemEl) itemEl.textContent = l2.item ? `Item: ${l2.item}` : "";
+
+  const offEl = document.getElementById(prefix + "2offering");
+  if (offEl) offEl.textContent = l2.offering ? `Offering: ${l2.offering}` : "";
+}
   // ------------------ Prestige mapping (same logic as sic4rio) ------------------
   function prestigeBaseKey(p) {
     if (!p || p <= 0) return null;
@@ -161,6 +215,21 @@
 
       // Favorite loadout -> perk icons on the card (if they exist in your JSON)
       const favs = Array.isArray(dwight.favLoadouts) ? dwight.favLoadouts : [];
+    fetch(cacheBust(KILLERS_JSON, Date.now()))
+  .then((r) => r.json())
+  .then((data) => {
+    const list = data?.killers || [];
+    const wraith = list.find((k) => k.id === "thewraith");
+    if (!wraith) {
+      console.warn("Wraith not found in killers.json");
+      return;
+    }
+
+    applyPrestige("wraith", wraith);
+    applyLoadouts("w", wraith);
+  })
+  .catch((err) => console.error("Failed to load killers.json", err));
+   
 const l1 = favs[0] || {};
 const l2 = favs[1] || {};
 const l1name = document.getElementById("l1name");
