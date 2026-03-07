@@ -71,6 +71,22 @@ function applyLoadouts(prefix, entry) {
 
   const offEl = document.getElementById(prefix + "2offering");
   if (offEl) offEl.textContent = l2.offering ? `Offering: ${l2.offering}` : "";
+
+  const loadout1Block = document.querySelector(`#${prefix}1perk1`)?.closest(".loadoutBlock");
+  const loadout2Block = document.querySelector(`#${prefix}2perk1`)?.closest(".loadoutBlock");
+
+  const l1HasStuff =
+    l1perks.some(Boolean) ||
+    !!l1.item ||
+    !!l1.offering;
+
+  const l2HasStuff =
+    l2perks.some(Boolean) ||
+    !!l2.item ||
+    !!l2.offering;
+
+  if (loadout1Block) loadout1Block.classList.toggle("is-empty", !l1HasStuff);
+  if (loadout2Block) loadout2Block.classList.toggle("is-empty", !l2HasStuff);
 }
   // ------------------ Prestige mapping (same logic as sic4rio) ------------------
   function prestigeBaseKey(p) {
@@ -259,4 +275,3 @@ fetch(cacheBust(KILLERS_JSON, Date.now()))
     applyLoadouts("w", wraith);
   })
   .catch((err) => console.error("Failed to load killers.json", err));
-  
