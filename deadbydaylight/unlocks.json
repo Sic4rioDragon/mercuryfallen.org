@@ -1,0 +1,698 @@
+{
+  "profile": "mercuryfallen",
+  "displayName": "MercuryFallen",
+  "updated": "2026-03-09",
+  "characters": {
+    "Animatronic": {
+      "owned": false,
+      "prestige": 0,
+      "haywire": 0,
+      "help-wanted": 0,
+      "phantom-fear": 0
+    },
+    "Artist": {
+      "owned": false,
+      "prestige": 0,
+      "grim-embrace": 0,
+      "hex-pentimento": 0,
+      "scourge-hook-pain-resonance": 0
+    },
+    "Blight": {
+      "owned": false,
+      "prestige": 0,
+      "dragons-grip": 0,
+      "hex-blood-favor": 0,
+      "hex-undying": 0
+    },
+    "Cannibal": {
+      "owned": false,
+      "prestige": 0,
+      "barbecue-chili": 0,
+      "franklins-demise": 0,
+      "knock-out": 0
+    },
+    "Cenobite": {
+      "owned": false,
+      "prestige": 0,
+      "deadlock": 0,
+      "hex-plaything": 0,
+      "scourge-hook-gift-of-pain": 0
+    },
+    "Clown": {
+      "owned": false,
+      "prestige": 0,
+      "bamboozle": 0,
+      "coulrophobia": 0,
+      "pop-goes-the-weasel": 0
+    },
+    "Dark_Lord": {
+      "owned": false,
+      "prestige": 0,
+      "dominance": 0,
+      "hex-wretched-fate": 0,
+      "human-greed": 0
+    },
+    "Deathslinger": {
+      "owned": false,
+      "prestige": 0,
+      "dead-mans-switch": 0,
+      "gearhead": 0,
+      "hex-retribution": 0
+    },
+    "Demogorgon": {
+      "owned": false,
+      "prestige": 0,
+      "cruel-limits": 0,
+      "mindbreaker": 0,
+      "surge": 0
+    },
+    "Doctor": {
+      "owned": false,
+      "prestige": 0,
+      "monitor-abuse": 0,
+      "overcharge": 0,
+      "overwhelming-presence": 0
+    },
+    "Dredge": {
+      "owned": false,
+      "prestige": 0,
+      "darkness-revealed": 0,
+      "dissolution": 0,
+      "septic-touch": 0
+    },
+    "Executioner": {
+      "owned": false,
+      "prestige": 0,
+      "deathbound": 0,
+      "forced-penance": 0,
+      "trail-of-torment": 0
+    },
+    "First": {
+      "owned": false,
+      "prestige": 0,
+      "hex-hive-mind": 0,
+      "secret-project": 0,
+      "turn-back-the-clock": 0
+    },
+    "Ghost_Face": {
+      "owned": false,
+      "prestige": 0,
+      "furtive-chase": 0,
+      "im-all-ears": 0,
+      "thrilling-tremors": 0
+    },
+    "Ghoul": {
+      "owned": false,
+      "prestige": 0,
+      "forever-entwined": 0,
+      "hex-nothing-but-misery": 0,
+      "none-are-free": 0
+    },
+    "Good_Guy": {
+      "owned": false,
+      "prestige": 0,
+      "batteries-included": 0,
+      "friends-til-the-end": 0,
+      "hex-two-can-play": 0
+    },
+    "Hag": {
+      "owned": false,
+      "prestige": 0,
+      "hex-devour-hope": 0,
+      "hex-ruin": 0,
+      "hex-the-third-seal": 0
+    },
+    "Hillbilly": {
+      "owned": false,
+      "prestige": 0,
+      "enduring": 0,
+      "lightborn": 0,
+      "tinkerer": 0
+    },
+    "Houndmaster": {
+      "owned": false,
+      "prestige": 0,
+      "all-shaking-thunder": 0,
+      "no-quarter": 0,
+      "scourge-hook-jagged-compass": 0
+    },
+    "Huntress": {
+      "owned": false,
+      "prestige": 0,
+      "beast-of-prey": 0,
+      "hex-huntress-lullaby": 0,
+      "territorial-imperative": 0
+    },
+    "Knight": {
+      "owned": false,
+      "prestige": 0,
+      "hex-face-the-darkness": 0,
+      "hubris": 0,
+      "nowhere-to-hide": 0
+    },
+    "Krasue": {
+      "owned": false,
+      "prestige": 0,
+      "hex-overture-of-doom": 0,
+      "ravenous": 0,
+      "wandering-eye": 0
+    },
+    "Legion": {
+      "owned": false,
+      "prestige": 0,
+      "discordance": 0,
+      "iron-maiden": 0,
+      "mad-grit": 0
+    },
+    "Lich": {
+      "owned": false,
+      "prestige": 0,
+      "dark-arrogance": 0,
+      "languid-touch": 0,
+      "weave-attunement": 0
+    },
+    "Mastermind": {
+      "owned": false,
+      "prestige": 0,
+      "awakened-awareness": 0,
+      "superior-anatomy": 0,
+      "terminus": 0
+    },
+    "Nemesis": {
+      "owned": false,
+      "prestige": 0,
+      "eruption": 0,
+      "hysteria": 0,
+      "lethal-pursuer": 0
+    },
+    "Nightmare": {
+      "owned": false,
+      "prestige": 0,
+      "blood-warden": 0,
+      "fire-up": 0,
+      "remember-me": 0
+    },
+    "Nurse": {
+      "owned": false,
+      "prestige": 0,
+      "a-nurses-calling": 0,
+      "stridor": 0,
+      "thanatophobia": 0
+    },
+    "Oni": {
+      "owned": false,
+      "prestige": 0,
+      "blood-echo": 0,
+      "nemesis": 0,
+      "zanshin-tactics": 0
+    },
+    "Onry%C5%8D": {
+      "owned": false,
+      "prestige": 0,
+      "call-of-brine": 0,
+      "merciless-storm": 0,
+      "scourge-hook-floods-of-rage": 0
+    },
+    "Pig": {
+      "owned": false,
+      "prestige": 0,
+      "make-your-choice": 0,
+      "scourge-hook-hangmans-trick": 0,
+      "surveillance": 0
+    },
+    "Plague": {
+      "owned": false,
+      "prestige": 0,
+      "corrupt-intervention": 0,
+      "dark-devotion": 0,
+      "infectious-fright": 0
+    },
+    "Shape": {
+      "owned": false,
+      "prestige": 0,
+      "dying-light": 0,
+      "play-with-your-food": 0,
+      "save-the-best-for-last": 0
+    },
+    "Singularity": {
+      "owned": false,
+      "prestige": 0,
+      "forced-hesitation": 0,
+      "genetic-limits": 0,
+      "machine-learning": 0
+    },
+    "Skull_Merchant": {
+      "owned": false,
+      "prestige": 0,
+      "game-afoot": 0,
+      "leverage": 0,
+      "thwack": 0
+    },
+    "Spirit": {
+      "owned": false,
+      "prestige": 0,
+      "hex-haunted-ground": 0,
+      "rancor": 0,
+      "spirit-fury": 0
+    },
+    "Trapper": {
+      "owned": false,
+      "prestige": 0,
+      "agitation": 0,
+      "brutal-strength": 0,
+      "unnerving-presence": 0
+    },
+    "Trickster": {
+      "owned": false,
+      "prestige": 0,
+      "hex-crowd-control": 0,
+      "no-way-out": 0,
+      "starstruck": 0
+    },
+    "Twins": {
+      "owned": false,
+      "prestige": 0,
+      "coup-de-grace": 0,
+      "hoarder": 0,
+      "oppression": 0
+    },
+    "Unknown": {
+      "owned": false,
+      "prestige": 0,
+      "unbound": 0,
+      "undone": 0,
+      "unforeseen": 0
+    },
+    "Wraith": {
+      "owned": false,
+      "prestige": 0,
+      "bloodhound": 0,
+      "predator": 0,
+      "shadowborn": 0
+    },
+    "Xenomorph": {
+      "owned": false,
+      "prestige": 0,
+      "alien-instinct": 0,
+      "rapid-brutality": 0,
+      "ultimate-weapon": 0
+    },
+    "Ace_Visconti": {
+      "owned": false,
+      "prestige": 0,
+      "ace-in-the-hole": 0,
+      "open-handed": 0,
+      "up-the-ante": 0
+    },
+    "Ada_Wong": {
+      "owned": false,
+      "prestige": 0,
+      "low-profile": 0,
+      "reactive-healing": 0,
+      "wiretap": 0
+    },
+    "Adam_Francis": {
+      "owned": false,
+      "prestige": 0,
+      "autodidact": 0,
+      "deliverance": 0,
+      "diversion": 0
+    },
+    "Aestri_Yazar": {
+      "owned": false,
+      "prestige": 0,
+      "bardic-inspiration": 0,
+      "mirrored-illusion": 0,
+      "still-sight": 0
+    },
+    "Alan_Wake": {
+      "owned": false,
+      "prestige": 0,
+      "boon-illumination": 0,
+      "champion-of-light": 0,
+      "deadline": 0
+    },
+    "Ashley_J._Williams": {
+      "owned": false,
+      "prestige": 0,
+      "buckle-up": 0,
+      "flip-flop": 0,
+      "mettle-of-man": 0
+    },
+    "Cheryl_Mason": {
+      "owned": false,
+      "prestige": 0,
+      "blood-pact": 0,
+      "repressed-alliance": 0,
+      "soul-guard": 0
+    },
+    "Claudette_Morel": {
+      "owned": false,
+      "prestige": 0,
+      "botany-knowledge": 0,
+      "empathy": 0,
+      "self-care": 0
+    },
+    "David_King": {
+      "owned": false,
+      "prestige": 0,
+      "dead-hard": 0,
+      "no-mither": 0,
+      "were-gonna-live-forever": 0
+    },
+    "Detective_Tapp": {
+      "owned": false,
+      "prestige": 0,
+      "detectives-hunch": 0,
+      "stake-out": 0,
+      "tenacity": 0
+    },
+    "Dustin_Henderson": {
+      "owned": false,
+      "prestige": 0,
+      "bada-bada-boom": 0,
+      "change-of-plan": 0,
+      "teamwork-full-circuit": 0
+    },
+    "Dwight_Fairfield": {
+      "owned": false,
+      "prestige": 0,
+      "bond": 0,
+      "leader": 0,
+      "prove-thyself": 0
+    },
+    "Eleven": {
+      "owned": false,
+      "prestige": 0,
+      "extrasensory-perception": 0,
+      "teamwork-soft-spoken": 0,
+      "we-see-you": 0
+    },
+    "Ellen_Ripley": {
+      "owned": false,
+      "prestige": 0,
+      "chemical-trap": 0,
+      "light-footed": 0,
+      "lucky-star": 0
+    },
+    "Elodie_Rakoto": {
+      "owned": false,
+      "prestige": 0,
+      "appraisal": 0,
+      "deception": 0,
+      "power-struggle": 0
+    },
+    "Felix_Richter": {
+      "owned": false,
+      "prestige": 0,
+      "built-to-last": 0,
+      "desperate-measures": 0,
+      "visionary": 0
+    },
+    "Feng_Min": {
+      "owned": false,
+      "prestige": 0,
+      "alert": 0,
+      "lithe": 0,
+      "technician": 0
+    },
+    "Gabriel_Soma": {
+      "owned": false,
+      "prestige": 0,
+      "made-for-this": 0,
+      "scavenger": 0,
+      "troubleshooter": 0
+    },
+    "Haddie_Kaur": {
+      "owned": false,
+      "prestige": 0,
+      "inner-focus": 0,
+      "overzealous": 0,
+      "residual-manifest": 0
+    },
+    "Jake_Park": {
+      "owned": false,
+      "prestige": 0,
+      "calm-spirit": 0,
+      "iron-will": 0,
+      "saboteur": 0
+    },
+    "Jane_Romero": {
+      "owned": false,
+      "prestige": 0,
+      "head-on": 0,
+      "poised": 0,
+      "solidarity": 0
+    },
+    "Jeff_Johansen": {
+      "owned": false,
+      "prestige": 0,
+      "aftercare": 0,
+      "breakdown": 0,
+      "distortion": 0
+    },
+    "Jill_Valentine": {
+      "owned": false,
+      "prestige": 0,
+      "blast-mine": 0,
+      "counterforce": 0,
+      "resurgence": 0
+    },
+    "Jonah_Vasquez": {
+      "owned": false,
+      "prestige": 0,
+      "boon-exponential": 0,
+      "corrective-action": 0,
+      "overcome": 0
+    },
+    "Kate_Denson": {
+      "owned": false,
+      "prestige": 0,
+      "boil-over": 0,
+      "dance-with-me": 0,
+      "windows-of-opportunity": 0
+    },
+    "Kwon_Tae-young": {
+      "owned": false,
+      "prestige": 0,
+      "a-place-for-us": 0,
+      "five-moves-ahead": 0,
+      "flow-state": 0
+    },
+    "Lara_Croft": {
+      "owned": false,
+      "prestige": 0,
+      "finesse": 0,
+      "hardened": 0,
+      "specialist": 0
+    },
+    "Laurie_Strode": {
+      "owned": false,
+      "prestige": 0,
+      "decisive-strike": 0,
+      "object-of-obsession": 0,
+      "sole-survivor": 0
+    },
+    "Leon_S._Kennedy": {
+      "owned": false,
+      "prestige": 0,
+      "bite-the-bullet": 0,
+      "flashbang": 0,
+      "rookie-spirit": 0
+    },
+    "Meg_Thomas": {
+      "owned": false,
+      "prestige": 0,
+      "adrenaline": 0,
+      "quick-quiet": 0,
+      "sprint-burst": 0
+    },
+    "Michonne_Grimes": {
+      "owned": false,
+      "prestige": 0,
+      "conviction": 0,
+      "last-stand": 0,
+      "teamwork-throw-down": 0
+    },
+    "Mikaela_Reid": {
+      "owned": false,
+      "prestige": 0,
+      "boon-circle-of-healing": 0,
+      "boon-shadow-step": 0,
+      "clairvoyance": 0
+    },
+    "Nancy_Wheeler": {
+      "owned": false,
+      "prestige": 0,
+      "better-together": 0,
+      "fixated": 0,
+      "inner-strength": 0
+    },
+    "Nea_Karlsson": {
+      "owned": false,
+      "prestige": 0,
+      "balanced-landing": 0,
+      "streetwise": 0,
+      "urban-evasion": 0
+    },
+    "Nicolas_Cage": {
+      "owned": false,
+      "prestige": 0,
+      "dramaturgy": 0,
+      "plot-twist": 0,
+      "scene-partner": 0
+    },
+    "Orela_Rose": {
+      "owned": false,
+      "prestige": 0,
+      "do-no-harm": 0,
+      "duty-of-care": 0,
+      "rapid-response": 0
+    },
+    "Quentin_Smith": {
+      "owned": false,
+      "prestige": 0,
+      "pharmacy": 0,
+      "vigil": 0,
+      "wake-up": 0
+    },
+    "Rebecca_Chambers": {
+      "owned": false,
+      "prestige": 0,
+      "better-than-new": 0,
+      "hyperfocus": 0,
+      "reassurance": 0
+    },
+    "Renato_Lyra": {
+      "owned": false,
+      "prestige": 0,
+      "background-player": 0,
+      "blood-rush": 0,
+      "teamwork-collective-stealth": 0
+    },
+    "Rick_Grimes": {
+      "owned": false,
+      "prestige": 0,
+      "apocalyptic-ingenuity": 0,
+      "come-and-get-me": 0,
+      "teamwork-toughen-up": 0
+    },
+    "Sable_Ward": {
+      "owned": false,
+      "prestige": 0,
+      "invocation-weaving-spiders": 0,
+      "strength-in-shadows": 0,
+      "wicked": 0
+    },
+    "Steve_Harrington": {
+      "owned": false,
+      "prestige": 0,
+      "babysitter": 0,
+      "camaraderie": 0,
+      "second-wind": 0
+    },
+    "Taurie_Cain": {
+      "owned": false,
+      "prestige": 0,
+      "clean-break": 0,
+      "invocation-treacherous-crows": 0,
+      "shoulder-the-burden": 0
+    },
+    "Thalita_Lyra": {
+      "owned": false,
+      "prestige": 0,
+      "cut-loose": 0,
+      "friendly-competition": 0,
+      "teamwork-power-of-two": 0
+    },
+    "Trevor_Belmont": {
+      "owned": false,
+      "prestige": 0,
+      "exultation": 0,
+      "eyes-of-belmont": 0,
+      "moment-of-glory": 0
+    },
+    "Vee_Boonyasak": {
+      "owned": false,
+      "prestige": 0,
+      "ghost-notes": 0,
+      "one-two-three-four": 0,
+      "road-life": 0
+    },
+    "Vittorio_Toscano": {
+      "owned": false,
+      "prestige": 0,
+      "fogwise": 0,
+      "potential-energy": 0,
+      "quick-gambit": 0
+    },
+    "William_%22Bill%22_Overbeck": {
+      "owned": false,
+      "prestige": 0,
+      "borrowed-time": 0,
+      "left-behind": 0,
+      "unbreakable": 0
+    },
+    "Yoichi_Asakawa": {
+      "owned": false,
+      "prestige": 0,
+      "boon-dark-theory": 0,
+      "empathic-connection": 0,
+      "parental-guidance": 0
+    },
+    "Yui_Kimura": {
+      "owned": false,
+      "prestige": 0,
+      "any-means-necessary": 0,
+      "breakout": 0,
+      "lucky-break": 0
+    },
+    "Yun-Jin_Lee": {
+      "owned": false,
+      "prestige": 0,
+      "fast-track": 0,
+      "self-preservation": 0,
+      "smash-hit": 0
+    },
+    "Zarina_Kassir": {
+      "owned": false,
+      "prestige": 0,
+      "for-the-people": 0,
+      "off-the-record": 0,
+      "red-herring": 0
+    }
+  },
+  "generalPerks": {
+    "survivor": {
+      "dark-sense": 0,
+      "deja-vu": 0,
+      "hope": 0,
+      "kindred": 0,
+      "lightweight": 0,
+      "no-one-left-behind": 0,
+      "plunderers-instinct": 0,
+      "premonition": 0,
+      "resilience": 0,
+      "slippery-meat": 0,
+      "small-game": 0,
+      "spine-chill": 0,
+      "this-is-not-happening": 0,
+      "well-make-it": 0
+    },
+    "killer": {
+      "bitter-murmur": 0,
+      "deerstalker": 0,
+      "distressing": 0,
+      "hex-no-one-escapes-death": 0,
+      "hex-thrill-of-the-hunt": 0,
+      "insidious": 0,
+      "iron-grasp": 0,
+      "scourge-hook-monstrous-shrine": 0,
+      "shattered-hope": 0,
+      "sloppy-butcher": 0,
+      "spies-from-the-shadows": 0,
+      "unrelenting": 0,
+      "whispers": 0
+    }
+  }
+}
