@@ -25,8 +25,8 @@
       "hex-undying": 0
     },
     "Cannibal": {
-      "owned": false,
-      "prestige": 0,
+      "owned": true,
+      "prestige": 3,
       "barbecue-chili": 0,
       "franklins-demise": 0,
       "knock-out": 0
@@ -39,8 +39,8 @@
       "scourge-hook-gift-of-pain": 0
     },
     "Clown": {
-      "owned": false,
-      "prestige": 0,
+      "owned": true,
+      "prestige": 3,
       "bamboozle": 0,
       "coulrophobia": 0,
       "pop-goes-the-weasel": 0
@@ -53,22 +53,22 @@
       "human-greed": 0
     },
     "Deathslinger": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "dead-mans-switch": 0,
       "gearhead": 0,
       "hex-retribution": 0
     },
     "Demogorgon": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "cruel-limits": 0,
       "mindbreaker": 0,
       "surge": 0
     },
     "Doctor": {
-      "owned": false,
-      "prestige": 0,
+      "owned": true,
+      "prestige": 3,
       "monitor-abuse": 0,
       "overcharge": 0,
       "overwhelming-presence": 0
@@ -81,7 +81,7 @@
       "septic-touch": 0
     },
     "Executioner": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "deathbound": 0,
       "forced-penance": 0,
@@ -95,7 +95,7 @@
       "turn-back-the-clock": 0
     },
     "Ghost_Face": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "furtive-chase": 0,
       "im-all-ears": 0,
@@ -116,14 +116,14 @@
       "hex-two-can-play": 0
     },
     "Hag": {
-      "owned": false,
-      "prestige": 0,
+      "owned": true,
+      "prestige": 3,
       "hex-devour-hope": 0,
       "hex-ruin": 0,
       "hex-the-third-seal": 0
     },
     "Hillbilly": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "enduring": 0,
       "lightborn": 0,
@@ -137,7 +137,7 @@
       "scourge-hook-jagged-compass": 0
     },
     "Huntress": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "beast-of-prey": 0,
       "hex-huntress-lullaby": 0,
@@ -158,8 +158,8 @@
       "wandering-eye": 0
     },
     "Legion": {
-      "owned": false,
-      "prestige": 0,
+      "owned": true,
+      "prestige": 3,
       "discordance": 0,
       "iron-maiden": 0,
       "mad-grit": 0
@@ -186,27 +186,27 @@
       "lethal-pursuer": 0
     },
     "Nightmare": {
-      "owned": false,
-      "prestige": 0,
+      "owned": true,
+      "prestige": 6,
       "blood-warden": 0,
       "fire-up": 0,
       "remember-me": 0
     },
     "Nurse": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "a-nurses-calling": 0,
       "stridor": 0,
       "thanatophobia": 0
     },
     "Oni": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "blood-echo": 0,
       "nemesis": 0,
       "zanshin-tactics": 0
     },
-    "Onry%C5%8D": {
+    "Onryo": {
       "owned": false,
       "prestige": 0,
       "call-of-brine": 0,
@@ -214,21 +214,21 @@
       "scourge-hook-floods-of-rage": 0
     },
     "Pig": {
-      "owned": false,
-      "prestige": 0,
+      "owned": true,
+      "prestige": 3,
       "make-your-choice": 0,
       "scourge-hook-hangmans-trick": 0,
       "surveillance": 0
     },
     "Plague": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "corrupt-intervention": 0,
       "dark-devotion": 0,
       "infectious-fright": 0
     },
     "Shape": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "dying-light": 0,
       "play-with-your-food": 0,
@@ -249,15 +249,15 @@
       "thwack": 0
     },
     "Spirit": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "hex-haunted-ground": 0,
       "rancor": 0,
       "spirit-fury": 0
     },
     "Trapper": {
-      "owned": false,
-      "prestige": 0,
+      "owned": true,
+      "prestige": 3,
       "agitation": 0,
       "brutal-strength": 0,
       "unnerving-presence": 0
@@ -284,7 +284,7 @@
       "unforeseen": 0
     },
     "Wraith": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "bloodhound": 0,
       "predator": 0,
