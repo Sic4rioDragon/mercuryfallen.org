@@ -11,14 +11,14 @@
       "phantom-fear": 0
     },
     "Artist": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "grim-embrace": 0,
       "hex-pentimento": 0,
       "scourge-hook-pain-resonance": 0
     },
     "Blight": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "dragons-grip": 0,
       "hex-blood-favor": 0,
@@ -88,7 +88,7 @@
       "trail-of-torment": 0
     },
     "First": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "hex-hive-mind": 0,
       "secret-project": 0,
@@ -96,7 +96,7 @@
     },
     "Ghost_Face": {
       "owned": true,
-      "prestige": 0,
+      "prestige": 3,
       "furtive-chase": 0,
       "im-all-ears": 0,
       "thrilling-tremors": 0
@@ -263,21 +263,21 @@
       "unnerving-presence": 0
     },
     "Trickster": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "hex-crowd-control": 0,
       "no-way-out": 0,
       "starstruck": 0
     },
     "Twins": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "coup-de-grace": 0,
       "hoarder": 0,
       "oppression": 0
     },
     "Unknown": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "unbound": 0,
       "undone": 0,
@@ -291,7 +291,7 @@
       "shadowborn": 0
     },
     "Xenomorph": {
-      "owned": false,
+      "owned": true,
       "prestige": 0,
       "alien-instinct": 0,
       "rapid-brutality": 0,
