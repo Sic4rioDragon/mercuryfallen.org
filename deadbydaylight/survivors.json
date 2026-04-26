@@ -6,6 +6,7 @@
       "name": "Dwight Fairfield",
       "img": "assets/dbd/CharPortraits/S01_DwightFairfield_Portrait.png",
       "owned": true,
+      "main": true,
       "prestige": 100
     },
     {

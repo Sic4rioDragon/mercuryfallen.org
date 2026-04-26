@@ -83,6 +83,7 @@
       "name": "The Legion",
       "img": "assets/dbd/CharPortraits/Kenya/K14_TheLegion_Portrait.png",
       "owned": true,
+      "main": true,
       "prestige": 12
     },
     {
