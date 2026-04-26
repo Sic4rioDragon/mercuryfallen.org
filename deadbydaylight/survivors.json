@@ -338,7 +338,7 @@
       "owned": true,
       "prestige": 1
     },
-    {
+        {
       "id": "eleven",
       "name": "Eleven",
       "img": "assets/dbd/CharPortraits/Poutine/T_UI_S51_Eleven_Portrait.png",
@@ -352,7 +352,26 @@
       "owned": true,
       "prestige": 1
     },
-    { "id": "alanwake", "owned": true, "prestige": 1 },
-    { "id": "thetroupe", "owned": true, "prestige": 1 }
+    {
+      "id": "alanwake",
+      "name": "Alan Wake",
+      "img": "assets/dbd/CharPortraits/Donut/S40_AlanWake_Portrait.png",
+      "owned": true,
+      "prestige": 1
+    },
+    {
+      "id": "sableward",
+      "name": "Sable Ward",
+      "img": "assets/dbd/CharPortraits/Applepie/S41_SableWard_Portrait.png",
+      "owned": true,
+      "prestige": 1
+    },
+    {
+      "id": "thetroupe",
+      "name": "The Troupe",
+      "img": "assets/dbd/CharPortraits/Cheesecake/S42_TheTroupe_Portrait.png",
+      "owned": true,
+      "prestige": 1
+    }
   ]
 }

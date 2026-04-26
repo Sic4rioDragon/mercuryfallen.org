@@ -233,12 +233,40 @@
       "owned": false,
       "prestige": 0
     },
-    { "id": "nightmare", "owned": true, "prestige": 7 },
-    { "id": "pig", "owned": true, "prestige": 3 },
-    { "id": "legion", "owned": true, "prestige": 12 },
-    { "id": "demogorgon", "owned": true, "prestige": 1 },
-    { "id": "executioner", "owned": true, "prestige": 1 },
-    { "id": "xenomorph", "owned": true, "prestige": 1 },
-    { "id": "first", "owned": true, "prestige": 1 }
+        {
+      "id": "nightmare",
+      "name": "The Nightmare",
+      "img": "assets/dbd/CharPortraits/England/K10_TheNightmare_Portrait.png",
+      "owned": true,
+      "prestige": 7
+    },
+    {
+      "id": "pig",
+      "name": "The Pig",
+      "img": "assets/dbd/CharPortraits/Finland/K11_ThePig_Portrait.png",
+      "owned": true,
+      "prestige": 3
+    },
+    {
+      "id": "demogorgon",
+      "name": "The Demogorgon",
+      "img": "assets/dbd/CharPortraits/Qatar/K17_TheDemogorgon_Portrait.png",
+      "owned": true,
+      "prestige": 1
+    },
+    {
+      "id": "executioner",
+      "name": "The Executioner",
+      "img": "assets/dbd/CharPortraits/Wales/K20_TheExecutioner_Portrait.png",
+      "owned": true,
+      "prestige": 1
+    },
+    {
+      "id": "xenomorph",
+      "name": "The Xenomorph",
+      "img": "assets/dbd/CharPortraits/Wormhole/K33_TheXenomorph_Portrait.png",
+      "owned": true,
+      "prestige": 1
+    }
   ]
 }

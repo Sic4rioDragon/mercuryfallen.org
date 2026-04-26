@@ -22,7 +22,7 @@ window.DBD_SURVIVOR_ORDER_IDS = [
   "haddiekaur","ada","rebeccachambers","vittoriotoscano","thalitalyra",
   "renatolyra","gabrielsoma","nicolascage","ellenripley","alanwake",
   "sableward","thetroupe","laracroft","trevor","tauriecain","orela",
-  "rickgrimes","michonnegrimes","VeeBoonyasak","dustin","eleven"
+  "rickgrimes","michonnegrimes","VeeBoonyasak","dustin","eleven","kwon"
 ];
 
 window.DBD_KILLER_ORDER_IDS = [
@@ -318,71 +318,73 @@ function initNameToggle() {
 wireModalClose();
 initNameToggle();
 
-fetch(cacheBust("./killers.json", Date.now()))
-  .then(r => r.json())
-  .then(data => {
-    const grid = document.getElementById("killer-grid");
-    const updated = document.getElementById("updated");
-    updated.textContent = "Last updated: " + (data.updated || "unknown");
+if (document.getElementById("killer-grid")) {
+  fetch(cacheBust("./killers.json", Date.now()))
+    .then(r => r.json())
+    .then(data => {
+      const grid = document.getElementById("killer-grid");
+      const updated = document.getElementById("updated");
+      if (updated) updated.textContent = "Last updated: " + (data.updated || "unknown");
 
-    const list = data.killers || [];
-    const ordered = window.DBD_sortByMainThenOrder(list, window.DBD_KILLER_ORDER_IDS);
-    const searchInput = document.getElementById("searchInput");
+      const list = data.killers || [];
+      const ordered = window.DBD_sortByMainThenOrder(list, window.DBD_KILLER_ORDER_IDS);
+      const searchInput = document.getElementById("searchInput");
 
-    function renderGrid(arr) {
-      grid.innerHTML = "";
+      function renderGrid(arr) {
+        grid.innerHTML = "";
 
-      arr.forEach(k => {
-        const div = document.createElement("div");
-        div.className = "killer" + (k.main ? " main" : "");
+        arr.forEach(k => {
+          const div = document.createElement("div");
+          div.className = "killer" + (k.main ? " main" : "");
 
-        const src = cacheBust(toMediaPath(k.img), data.updated || Date.now());
+          const src = cacheBust(toMediaPath(k.img), data.updated || Date.now());
 
-        div.innerHTML = `
-          <img src="${src}" alt="${escapeAttr(k.name)}">
-          <div class="killer-name ${k.nameshown === false ? "is-hidden" : ""}">${escapeHtml(k.name)}</div>
-          ${DBD_displayPrestige(k) > 0 ? DBD_renderPrestigeBadge(DBD_displayPrestige(k)) : ""}
-        `;
+          div.innerHTML = `
+            <img src="${src}" alt="${escapeAttr(k.name)}">
+            <div class="killer-name ${k.nameshown === false ? "is-hidden" : ""}">${escapeHtml(k.name)}</div>
+            ${DBD_displayPrestige(k) > 0 ? DBD_renderPrestigeBadge(DBD_displayPrestige(k)) : ""}
+          `;
 
-        const imgEl = div.querySelector("img");
-        if (imgEl) {
-          const intendedSrc = imgEl.getAttribute("src") || imgEl.src;
-          attachImageFallback(imgEl, {
-            type: "killer",
-            name: k.name,
-            intendedSrc
-          });
-        }
-
-        div.addEventListener("click", (e) => {
-          const url = `${location.origin}/deadbydaylight/?k=${encodeURIComponent(k.id)}`;
-          if (e.ctrlKey || e.metaKey) {
-            window.open(url, "_blank");
-            return;
+          const imgEl = div.querySelector("img");
+          if (imgEl) {
+            const intendedSrc = imgEl.getAttribute("src") || imgEl.src;
+            attachImageFallback(imgEl, {
+              type: "killer",
+              name: k.name,
+              intendedSrc
+            });
           }
-          openModalForKiller(k);
+
+          div.addEventListener("click", (e) => {
+            const url = `${location.origin}/deadbydaylight/?k=${encodeURIComponent(k.id)}`;
+            if (e.ctrlKey || e.metaKey) {
+              window.open(url, "_blank");
+              return;
+            }
+            openModalForKiller(k);
+          });
+
+          grid.appendChild(div);
         });
+      }
 
-        grid.appendChild(div);
-      });
-    }
+      function applyFiltersAndRender() {
+        const q = (searchInput?.value || "").toLowerCase().trim();
+        const filtered = ordered.filter(k => {
+          if (!q) return true;
+          return (k.name || "").toLowerCase().includes(q) || (k.id || "").toLowerCase().includes(q);
+        });
+        renderGrid(filtered);
+      }
 
-    function applyFiltersAndRender() {
-      const q = (searchInput?.value || "").toLowerCase().trim();
-      const filtered = ordered.filter(k => {
-        if (!q) return true;
-        return (k.name || "").toLowerCase().includes(q) || (k.id || "").toLowerCase().includes(q);
-      });
-      renderGrid(filtered);
-    }
+      searchInput?.addEventListener("input", applyFiltersAndRender);
+      applyFiltersAndRender();
 
-    searchInput?.addEventListener("input", applyFiltersAndRender);
-    applyFiltersAndRender();
-
-    const qk = getQueryK();
-    if (qk) {
-      const found = ordered.find(x => x.id === qk);
-      if (found) openModalForKiller(found);
-    }
-  })
-  .catch(err => console.error("Failed to load killers.json", err));
+      const qk = getQueryK();
+      if (qk) {
+        const found = ordered.find(x => x.id === qk);
+        if (found) openModalForKiller(found);
+      }
+    })
+    .catch(err => console.error("Failed to load killers.json", err));
+}
